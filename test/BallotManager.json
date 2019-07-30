@@ -3042,10 +3042,16 @@
       "links": {},
       "address": "0xB95dB6EB991b7b0C2c226Cd9d90B222177C2F573",
       "transactionHash": "0xf4fb782280fd040f0b50bb3eea06fd730c2478733a866a6e08f3280c25b2915b"
+    },
+    "1563551229490": {
+      "events": {},
+      "links": {},
+      "address": "0x485FBDA4D82F6b69ef4898a83761C83E24759633",
+      "transactionHash": "0x9dfdc8008e1fed0415303959ba055ee5f6ee411fab3b5eae23ee0f39f36984f6"
     }
   },
   "schemaVersion": "3.0.10",
-  "updatedAt": "2019-07-25T14:40:52.666Z",
+  "updatedAt": "2019-07-30T00:09:40.953Z",
   "devdoc": {
     "methods": {
       "isOwner()": {

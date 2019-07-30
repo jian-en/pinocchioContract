@@ -1401,12 +1401,12 @@
     "1563551229490": {
       "events": {},
       "links": {},
-      "address": "0x612A52c0c9eA8971AeE0AC026C0d5427e90725e8",
-      "transactionHash": "0xc96d077380d61fba057a23a9c7a0c721a5f2925f5e68c6b6aaefbfb2fe981792"
+      "address": "0x2fAa9Ef070B4e32958dB420B33F620109BaCc410",
+      "transactionHash": "0x9a729d73cb72bd3047e679ee3311f68f7db69d067830127211b5692f92657533"
     }
   },
   "schemaVersion": "3.0.10",
-  "updatedAt": "2019-07-26T21:04:27.718Z",
+  "updatedAt": "2019-07-30T00:09:40.956Z",
   "devdoc": {
     "methods": {}
   },

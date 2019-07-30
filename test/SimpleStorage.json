@@ -579,12 +579,12 @@
     "1563551229490": {
       "events": {},
       "links": {},
-      "address": "0xb29a721D068CADcD455c5b5aF310082E1cB77333",
-      "transactionHash": "0xda8fbeeb3d7a97c0ba66d8ea704ba240619fe0b7fa166ed49f3ea5dc16d50576"
+      "address": "0x8a00717b53e39f3651DfC2a9C257B6C7F8E1299A",
+      "transactionHash": "0x04b0e1d73699c018905906d4df65b2dbe30d79d6bf07133e686881864150ac08"
     }
   },
   "schemaVersion": "3.0.10",
-  "updatedAt": "2019-07-26T21:04:27.716Z",
+  "updatedAt": "2019-07-30T00:09:40.955Z",
   "devdoc": {
     "methods": {}
   },
