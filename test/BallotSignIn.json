@@ -1,0 +1,1960 @@
+{
+  "contractName": "BallotSignIn",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "isOrganizer",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "renounceOwnership",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "name": "eventToBallot",
+      "outputs": [
+        {
+          "name": "numPos",
+          "type": "uint256"
+        },
+        {
+          "name": "organizer",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "isOwner",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_organizer",
+          "type": "address"
+        },
+        {
+          "name": "_eventId",
+          "type": "string"
+        }
+      ],
+      "name": "approveEvent",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_organizer",
+          "type": "address"
+        }
+      ],
+      "name": "addOrganizer",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "transferOwnership",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "previousOwner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "OwnershipTransferred",
+      "type": "event"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_attendee",
+          "type": "address"
+        },
+        {
+          "name": "_eventId",
+          "type": "string"
+        }
+      ],
+      "name": "isAttendee",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_attendee",
+          "type": "address"
+        },
+        {
+          "name": "_eventId",
+          "type": "string"
+        }
+      ],
+      "name": "addAttendee",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.8+commit.23d335f2\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[{\"name\":\"\",\"type\":\"address\"}],\"name\":\"isOrganizer\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"renounceOwnership\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"\",\"type\":\"string\"}],\"name\":\"eventToBallot\",\"outputs\":[{\"name\":\"numPos\",\"type\":\"uint256\"},{\"name\":\"organizer\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"isOwner\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_organizer\",\"type\":\"address\"},{\"name\":\"_eventId\",\"type\":\"string\"}],\"name\":\"approveEvent\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"_attendee\",\"type\":\"address\"},{\"name\":\"_eventId\",\"type\":\"string\"}],\"name\":\"isAttendee\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_organizer\",\"type\":\"address\"}],\"name\":\"addOrganizer\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_attendee\",\"type\":\"address\"},{\"name\":\"_eventId\",\"type\":\"string\"}],\"name\":\"addAttendee\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"previousOwner\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"OwnershipTransferred\",\"type\":\"event\"}],\"devdoc\":{\"methods\":{\"isOwner()\":{\"details\":\"Returns true if the caller is the current owner.\"},\"owner()\":{\"details\":\"Returns the address of the current owner.\"},\"renounceOwnership()\":{\"details\":\"Leaves the contract without owner. It will not be possible to call `onlyOwner` functions anymore. Can only be called by the current owner.     * > Note: Renouncing ownership will leave the contract without an owner, thereby removing any functionality that is only available to the owner.\"},\"transferOwnership(address)\":{\"details\":\"Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner.\"}}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/fujian/CMU/Studio/pinocchioDapp/contracts/BallotSignIn.sol\":\"BallotSignIn\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/fujian/CMU/Studio/pinocchioDapp/contracts/BallotSignIn.sol\":{\"keccak256\":\"0x94a486131011b01a167bf873a69562ceb390709146c1966d5dfb2f07c2969414\",\"urls\":[\"bzzr://87a6fd53424b6e93e89ae0d17d1359422484327ef6a16e671808714834395ad2\"]},\"/Users/fujian/CMU/Studio/pinocchioDapp/contracts/ballots/BallotManager.sol\":{\"keccak256\":\"0x028fc273891b1e42247c30f3e17262f3aad39d7c7304ff414d94767e9945d069\",\"urls\":[\"bzzr://e5f33a4e5fa4165ee7dce7e368282d70cb74dc18ea3925f463b0e54e79be33d4\"]},\"openzeppelin-solidity/contracts/ownership/Ownable.sol\":{\"keccak256\":\"0xf79fb10e8235770eb4aea7249034076a3cc9f9119ad944fc48705bae9c9d20dc\",\"urls\":[\"bzzr://d12a11272051eb6586de8f7e0a82c04a98c9984ce8b2a6cf1ee439f65aba29a9\"]}},\"version\":1}",
+  "bytecode": "0x6080604052336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055506000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16600073ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a36112ea806100cf6000396000f3fe608060405234801561001057600080fd5b506004361061009e5760003560e01c8063b6b2c1ed11610066578063b6b2c1ed14610277578063bb028efb14610352578063e4725f0214610445578063f18c2b7714610489578063f2fde38b146105645761009e565b806341676f15146100a3578063715018a6146100ff5780637a12afe3146101095780638da5cb5b1461020b5780638f32d59b14610255575b600080fd5b6100e5600480360360208110156100b957600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506105a8565b604051808215151515815260200191505060405180910390f35b6101076105c8565b005b6101c26004803603602081101561011f57600080fd5b810190808035906020019064010000000081111561013c57600080fd5b82018360208201111561014e57600080fd5b8035906020019184600183028401116401000000008311171561017057600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f820116905080830192505050505050509192919290505050610701565b604051808381526020018273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019250505060405180910390f35b61021361075b565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b61025d610784565b604051808215151515815260200191505060405180910390f35b6103506004803603604081101561028d57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803590602001906401000000008111156102ca57600080fd5b8201836020820111156102dc57600080fd5b803590602001918460018302840111640100000000831117156102fe57600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f8201169050808301925050505050505091929192905050506107db565b005b61042b6004803603604081101561036857600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803590602001906401000000008111156103a557600080fd5b8201836020820111156103b757600080fd5b803590602001918460018302840111640100000000831117156103d957600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f820116905080830192505050505050509192919290505050610ad4565b604051808215151515815260200191505060405180910390f35b6104876004803603602081101561045b57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610b95565b005b6105626004803603604081101561049f57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803590602001906401000000008111156104dc57600080fd5b8201836020820111156104ee57600080fd5b8035906020019184600183028401116401000000008311171561051057600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f820116905080830192505050505050509192919290505050610d98565b005b6105a66004803603602081101561057a57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505061102f565b005b60016020528060005260406000206000915054906101000a900460ff1681565b6105d0610784565b610642576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260208152602001807f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e657281525060200191505060405180910390fd5b600073ffffffffffffffffffffffffffffffffffffffff166000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a360008060006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550565b6002818051602081018201805184825260208301602085012081835280955050505050506000915090508060000154908060010160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905082565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905090565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614905090565b6107e3610784565b610855576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260208152602001807f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e657281525060200191505060405180910390fd5b600160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060009054906101000a900460ff16610914576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252601f8152602001807f4f6e6c79206f7267616e697a65722063616e20686f6c64206576656e74732e0081525060200191505060405180910390fd5b600073ffffffffffffffffffffffffffffffffffffffff166002826040518082805190602001908083835b60208310610962578051825260208201915060208101905060208303925061093f565b6001836020036101000a038019825116818451168082178552505050505050905001915050908152602001604051809103902060010160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1614610a25576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260288152602001806112976028913960400191505060405180910390fd5b816002826040518082805190602001908083835b60208310610a5c5780518252602082019150602081019050602083039250610a39565b6001836020036101000a038019825116818451168082178552505050505050905001915050908152602001604051809103902060010160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505050565b60006002826040518082805190602001908083835b60208310610b0c5780518252602082019150602081019050602083039250610ae9565b6001836020036101000a038019825116818451168082178552505050505050905001915050908152602001604051809103902060020160008473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060009054906101000a900460ff16905092915050565b610b9d610784565b610c0f576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260208152602001807f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e657281525060200191505060405180910390fd5b600160008273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060009054906101000a900460ff1615610cb2576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252602581526020018061124e6025913960400191505060405180910390fd5b8073ffffffffffffffffffffffffffffffffffffffff16610cd161075b565b73ffffffffffffffffffffffffffffffffffffffff161415610d3e576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252602e8152602001806111fa602e913960400191505060405180910390fd5b60018060008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff02191690831515021790555050565b80600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060009054906101000a900460ff16610e3b576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260248152602001806112736024913960400191505060405180910390fd5b6002816040518082805190602001908083835b60208310610e715780518252602082019150602081019050602083039250610e4e565b6001836020036101000a038019825116818451168082178552505050505050905001915050908152602001604051809103902060010160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614610f68576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252601e8152602001807f5468652073656e646572206d757374206f776e207468652042616c6c6f74000081525060200191505060405180910390fd5b60016002836040518082805190602001908083835b60208310610fa05780518252602082019150602081019050602083039250610f7d565b6001836020036101000a038019825116818451168082178552505050505050905001915050908152602001604051809103902060020160008573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff021916908315150217905550505050565b611037610784565b6110a9576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260208152602001807f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e657281525060200191505060405180910390fd5b6110b2816110b5565b50565b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff16141561113b576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260268152602001806112286026913960400191505060405180910390fd5b8073ffffffffffffffffffffffffffffffffffffffff166000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a3806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505056fe4f776e65722063616e206e6f7420616464207468656d73656c76657320617320746865206f7267616e697a65722e4f776e61626c653a206e6577206f776e657220697320746865207a65726f2061646472657373546865206f7267616e697a65722068617320616c7265616479206265656e2061646465642e5468652073656e646572206d75737420626520612076616c6964206f7267616e697a65724f6e6c7920756e61737369676e6564206576656e7449642063616e20626520617070726f7665642ea165627a7a72305820ac09dca640e195afde42d2be8944b9ab81b5aeb8288ad831104205ba7442e2240029",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061009e5760003560e01c8063b6b2c1ed11610066578063b6b2c1ed14610277578063bb028efb14610352578063e4725f0214610445578063f18c2b7714610489578063f2fde38b146105645761009e565b806341676f15146100a3578063715018a6146100ff5780637a12afe3146101095780638da5cb5b1461020b5780638f32d59b14610255575b600080fd5b6100e5600480360360208110156100b957600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506105a8565b604051808215151515815260200191505060405180910390f35b6101076105c8565b005b6101c26004803603602081101561011f57600080fd5b810190808035906020019064010000000081111561013c57600080fd5b82018360208201111561014e57600080fd5b8035906020019184600183028401116401000000008311171561017057600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f820116905080830192505050505050509192919290505050610701565b604051808381526020018273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019250505060405180910390f35b61021361075b565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b61025d610784565b604051808215151515815260200191505060405180910390f35b6103506004803603604081101561028d57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803590602001906401000000008111156102ca57600080fd5b8201836020820111156102dc57600080fd5b803590602001918460018302840111640100000000831117156102fe57600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f8201169050808301925050505050505091929192905050506107db565b005b61042b6004803603604081101561036857600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803590602001906401000000008111156103a557600080fd5b8201836020820111156103b757600080fd5b803590602001918460018302840111640100000000831117156103d957600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f820116905080830192505050505050509192919290505050610ad4565b604051808215151515815260200191505060405180910390f35b6104876004803603602081101561045b57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610b95565b005b6105626004803603604081101561049f57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803590602001906401000000008111156104dc57600080fd5b8201836020820111156104ee57600080fd5b8035906020019184600183028401116401000000008311171561051057600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f820116905080830192505050505050509192919290505050610d98565b005b6105a66004803603602081101561057a57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505061102f565b005b60016020528060005260406000206000915054906101000a900460ff1681565b6105d0610784565b610642576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260208152602001807f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e657281525060200191505060405180910390fd5b600073ffffffffffffffffffffffffffffffffffffffff166000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a360008060006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550565b6002818051602081018201805184825260208301602085012081835280955050505050506000915090508060000154908060010160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905082565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905090565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614905090565b6107e3610784565b610855576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260208152602001807f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e657281525060200191505060405180910390fd5b600160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060009054906101000a900460ff16610914576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252601f8152602001807f4f6e6c79206f7267616e697a65722063616e20686f6c64206576656e74732e0081525060200191505060405180910390fd5b600073ffffffffffffffffffffffffffffffffffffffff166002826040518082805190602001908083835b60208310610962578051825260208201915060208101905060208303925061093f565b6001836020036101000a038019825116818451168082178552505050505050905001915050908152602001604051809103902060010160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1614610a25576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260288152602001806112976028913960400191505060405180910390fd5b816002826040518082805190602001908083835b60208310610a5c5780518252602082019150602081019050602083039250610a39565b6001836020036101000a038019825116818451168082178552505050505050905001915050908152602001604051809103902060010160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505050565b60006002826040518082805190602001908083835b60208310610b0c5780518252602082019150602081019050602083039250610ae9565b6001836020036101000a038019825116818451168082178552505050505050905001915050908152602001604051809103902060020160008473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060009054906101000a900460ff16905092915050565b610b9d610784565b610c0f576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260208152602001807f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e657281525060200191505060405180910390fd5b600160008273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060009054906101000a900460ff1615610cb2576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252602581526020018061124e6025913960400191505060405180910390fd5b8073ffffffffffffffffffffffffffffffffffffffff16610cd161075b565b73ffffffffffffffffffffffffffffffffffffffff161415610d3e576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252602e8152602001806111fa602e913960400191505060405180910390fd5b60018060008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff02191690831515021790555050565b80600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060009054906101000a900460ff16610e3b576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260248152602001806112736024913960400191505060405180910390fd5b6002816040518082805190602001908083835b60208310610e715780518252602082019150602081019050602083039250610e4e565b6001836020036101000a038019825116818451168082178552505050505050905001915050908152602001604051809103902060010160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614610f68576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252601e8152602001807f5468652073656e646572206d757374206f776e207468652042616c6c6f74000081525060200191505060405180910390fd5b60016002836040518082805190602001908083835b60208310610fa05780518252602082019150602081019050602083039250610f7d565b6001836020036101000a038019825116818451168082178552505050505050905001915050908152602001604051809103902060020160008573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff021916908315150217905550505050565b611037610784565b6110a9576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260208152602001807f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e657281525060200191505060405180910390fd5b6110b2816110b5565b50565b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff16141561113b576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260268152602001806112286026913960400191505060405180910390fd5b8073ffffffffffffffffffffffffffffffffffffffff166000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a3806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505056fe4f776e65722063616e206e6f7420616464207468656d73656c76657320617320746865206f7267616e697a65722e4f776e61626c653a206e6577206f776e657220697320746865207a65726f2061646472657373546865206f7267616e697a65722068617320616c7265616479206265656e2061646465642e5468652073656e646572206d75737420626520612076616c6964206f7267616e697a65724f6e6c7920756e61737369676e6564206576656e7449642063616e20626520617070726f7665642ea165627a7a72305820ac09dca640e195afde42d2be8944b9ab81b5aeb8288ad831104205ba7442e2240029",
+  "sourceMap": "64:633:0:-;;;666:10:5;657:6;;:19;;;;;;;;;;;;;;;;;;724:6;;;;;;;;;;;691:40;;720:1;691:40;;;;;;;;;;;;64:633:0;;;;;;",
+  "deployedSourceMap": "64:633:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;64:633:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;994:44:4;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;994:44:4;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;1599:137:5;;;:::i;:::-;;1044:47:4;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1044:47:4;;;;;;;;;;21:11:-1;8;5:28;2:2;;;46:1;43;36:12;2:2;1044:47:4;;35:9:-1;28:4;12:14;8:25;5:40;2:2;;;58:1;55;48:12;2:2;1044:47:4;;;;;;100:9:-1;95:1;81:12;77:20;67:8;63:35;60:50;39:11;25:12;22:29;11:107;8:2;;;131:1;128;121:12;8:2;1044:47:4;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;30:3:-1;22:6;14;1:33;99:1;93:3;85:6;81:16;74:27;137:4;133:9;126:4;121:3;117:14;113:30;106:37;;169:3;161:6;157:16;147:26;;1044:47:4;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;814:77:5;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;1165:90;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;1386:333:4;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1386:333:4;;;;;;;;;;;;;;;;;;;;;21:11:-1;8;5:28;2:2;;;46:1;43;36:12;2:2;1386:333:4;;35:9:-1;28:4;12:14;8:25;5:40;2:2;;;58:1;55;48:12;2:2;1386:333:4;;;;;;100:9:-1;95:1;81:12;77:20;67:8;63:35;60:50;39:11;25:12;22:29;11:107;8:2;;;131:1;128;121:12;8:2;1386:333:4;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;30:3:-1;22:6;14;1:33;99:1;93:3;85:6;81:16;74:27;137:4;133:9;126:4;121:3;117:14;113:30;106:37;;169:3;161:6;157:16;147:26;;1386:333:4;;;;;;;;;;;;;;;:::i;:::-;;365:158:0;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;365:158:0;;;;;;;;;;;;;;;;;;;;;21:11:-1;8;5:28;2:2;;;46:1;43;36:12;2:2;365:158:0;;35:9:-1;28:4;12:14;8:25;5:40;2:2;;;58:1;55;48:12;2:2;365:158:0;;;;;;100:9:-1;95:1;81:12;77:20;67:8;63:35;60:50;39:11;25:12;22:29;11:107;8:2;;;131:1;128;121:12;8:2;365:158:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;30:3:-1;22:6;14;1:33;99:1;93:3;85:6;81:16;74:27;137:4;133:9;126:4;121:3;117:14;113:30;106:37;;169:3;161:6;157:16;147:26;;365:158:0;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;1098:282:4;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1098:282:4;;;;;;;;;;;;;;;;;;;:::i;:::-;;529:166:0;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;529:166:0;;;;;;;;;;;;;;;;;;;;;21:11:-1;8;5:28;2:2;;;46:1;43;36:12;2:2;529:166:0;;35:9:-1;28:4;12:14;8:25;5:40;2:2;;;58:1;55;48:12;2:2;529:166:0;;;;;;100:9:-1;95:1;81:12;77:20;67:8;63:35;60:50;39:11;25:12;22:29;11:107;8:2;;;131:1;128;121:12;8:2;529:166:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;30:3:-1;22:6;14;1:33;99:1;93:3;85:6;81:16;74:27;137:4;133:9;126:4;121:3;117:14;113:30;106:37;;169:3;161:6;157:16;147:26;;529:166:0;;;;;;;;;;;;;;;:::i;:::-;;1885:107:5;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1885:107:5;;;;;;;;;;;;;;;;;;;:::i;:::-;;994:44:4;;;;;;;;;;;;;;;;;;;;;;:::o;1599:137:5:-;1018:9;:7;:9::i;:::-;1010:54;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1697:1;1660:40;;1681:6;;;;;;;;;;;1660:40;;;;;;;;;;;;1727:1;1710:6;;:19;;;;;;;;;;;;;;;;;;1599:137::o;1044:47:4:-;;;28:7:-1;22:14;169:4;160:7;156:18;147:7;143:32;204:13;198:20;246:8;231:13;224:31;316:4;307:7;303:18;296:4;287:7;283:18;273:49;350:9;335:13;328:32;378:4;366:16;;0:388;;;;1044:47:4;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;814:77:5:-;852:7;878:6;;;;;;;;;;;871:13;;814:77;:::o;1165:90::-;1205:4;1242:6;;;;;;;;;;;1228:20;;:10;:20;;;1221:27;;1165:90;:::o;1386:333:4:-;1018:9:5;:7;:9::i;:::-;1010:54;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1487:11:4;:23;1499:10;1487:23;;;;;;;;;;;;;;;;;;;;;;;;;1479:67;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1609:1;1564:47;;:13;1578:8;1564:23;;;;;;;;;;;;;36:153:-1;66:2;61:3;58:11;36:153;;182:3;176:10;171:3;164:23;98:2;93:3;89:12;82:19;;123:2;118:3;114:12;107:19;;148:2;143:3;139:12;132:19;;36:153;;;274:1;267:3;263:2;259:12;254:3;250:22;246:30;315:4;311:9;305:3;299:10;295:26;356:4;350:3;344:10;340:21;389:7;380;377:20;372:3;365:33;3:399;;;1564:23:4;;;;;;;;;;;;;;;;;;;;;:33;;;;;;;;;;;;:47;;;1556:100;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1702:10;1666:13;1680:8;1666:23;;;;;;;;;;;;;36:153:-1;66:2;61:3;58:11;36:153;;182:3;176:10;171:3;164:23;98:2;93:3;89:12;82:19;;123:2;118:3;114:12;107:19;;148:2;143:3;139:12;132:19;;36:153;;;274:1;267:3;263:2;259:12;254:3;250:22;246:30;315:4;311:9;305:3;299:10;295:26;356:4;350:3;344:10;340:21;389:7;380;377:20;372:3;365:33;3:399;;;1666:23:4;;;;;;;;;;;;;;;;;;;;;:33;;;:46;;;;;;;;;;;;;;;;;;1386:333;;:::o;365:158:0:-;449:4;471:13;485:8;471:23;;;;;;;;;;;;;36:153:-1;66:2;61:3;58:11;36:153;;182:3;176:10;171:3;164:23;98:2;93:3;89:12;82:19;;123:2;118:3;114:12;107:19;;148:2;143:3;139:12;132:19;;36:153;;;274:1;267:3;263:2;259:12;254:3;250:22;246:30;315:4;311:9;305:3;299:10;295:26;356:4;350:3;344:10;340:21;389:7;380;377:20;372:3;365:33;3:399;;;471:23:0;;;;;;;;;;;;;;;;;;;;;:34;;:45;506:9;471:45;;;;;;;;;;;;;;;;;;;;;;;;;464:52;;365:158;;;;:::o;1098:282:4:-;1018:9:5;:7;:9::i;:::-;1010:54;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1178:11:4;:23;1190:10;1178:23;;;;;;;;;;;;;;;;;;;;;;;;;1177:24;1169:74;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1272:10;1261:21;;:7;:5;:7::i;:::-;:21;;;;1253:80;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1369:4;1343:11;:23;1355:10;1343:23;;;;;;;;;;;;;;;;:30;;;;;;;;;;;;;;;;;;1098:282;:::o;529:166:0:-;616:8;177:11;:23;189:10;177:23;;;;;;;;;;;;;;;;;;;;;;;;;169:72;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;273:13;287:8;273:23;;;;;;;;;;;;;36:153:-1;66:2;61:3;58:11;36:153;;182:3;176:10;171:3;164:23;98:2;93:3;89:12;82:19;;123:2;118:3;114:12;107:19;;148:2;143:3;139:12;132:19;;36:153;;;274:1;267:3;263:2;259:12;254:3;250:22;246:30;315:4;311:9;305:3;299:10;295:26;356:4;350:3;344:10;340:21;389:7;380;377:20;372:3;365:33;3:399;;;273:23:0;;;;;;;;;;;;;;;;;;;;;:33;;;;;;;;;;;;259:47;;:10;:47;;;251:90;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;684:4;636:13;650:8;636:23;;;;;;;;;;;;;36:153:-1;66:2;61:3;58:11;36:153;;182:3;176:10;171:3;164:23;98:2;93:3;89:12;82:19;;123:2;118:3;114:12;107:19;;148:2;143:3;139:12;132:19;;36:153;;;274:1;267:3;263:2;259:12;254:3;250:22;246:30;315:4;311:9;305:3;299:10;295:26;356:4;350:3;344:10;340:21;389:7;380;377:20;372:3;365:33;3:399;;;636:23:0;;;;;;;;;;;;;;;;;;;;;:34;;:45;671:9;636:45;;;;;;;;;;;;;;;;:52;;;;;;;;;;;;;;;;;;529:166;;;:::o;1885:107:5:-;1018:9;:7;:9::i;:::-;1010:54;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1957:28;1976:8;1957:18;:28::i;:::-;1885:107;:::o;2093:225::-;2186:1;2166:22;;:8;:22;;;;2158:73;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2275:8;2246:38;;2267:6;;;;;;;;;;;2246:38;;;;;;;;;;;;2303:8;2294:6;;:17;;;;;;;;;;;;;;;;;;2093:225;:::o",
+  "source": "pragma solidity ^0.5.8;\n\nimport './ballots/BallotManager.sol';\n\ncontract BallotSignIn is BallotManager {\n\n    modifier onlyOrganizerOf(string memory _eventId) {\n        require(isOrganizer[msg.sender], \"The sender must be a valid organizer\");\n        require(msg.sender == eventToBallot[_eventId].organizer, \"The sender must own the Ballot\");\n        _;\n    }\n\n    function isAttendee(address _attendee, string memory _eventId) public view returns (bool){\n        return eventToBallot[_eventId].isAttendee[_attendee];\n    }\n\n    function addAttendee(address _attendee, string memory _eventId) public onlyOrganizerOf(_eventId) {\n        eventToBallot[_eventId].isAttendee[_attendee] = true;\n    }\n}",
+  "sourcePath": "/Users/fujian/CMU/Studio/pinocchioDapp/contracts/BallotSignIn.sol",
+  "ast": {
+    "absolutePath": "/Users/fujian/CMU/Studio/pinocchioDapp/contracts/BallotSignIn.sol",
+    "exportedSymbols": {
+      "BallotSignIn": [
+        67
+      ]
+    },
+    "id": 68,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".8"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:0"
+      },
+      {
+        "absolutePath": "/Users/fujian/CMU/Studio/pinocchioDapp/contracts/ballots/BallotManager.sol",
+        "file": "./ballots/BallotManager.sol",
+        "id": 2,
+        "nodeType": "ImportDirective",
+        "scope": 68,
+        "sourceUnit": 355,
+        "src": "25:37:0",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 3,
+              "name": "BallotManager",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 354,
+              "src": "89:13:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_BallotManager_$354",
+                "typeString": "contract BallotManager"
+              }
+            },
+            "id": 4,
+            "nodeType": "InheritanceSpecifier",
+            "src": "89:13:0"
+          }
+        ],
+        "contractDependencies": [
+          354,
+          465
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 67,
+        "linearizedBaseContracts": [
+          67,
+          354,
+          465
+        ],
+        "name": "BallotSignIn",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 28,
+              "nodeType": "Block",
+              "src": "159:200:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "baseExpression": {
+                          "argumentTypes": null,
+                          "id": 9,
+                          "name": "isOrganizer",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 283,
+                          "src": "177:11:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_mapping$_t_address_$_t_bool_$",
+                            "typeString": "mapping(address => bool)"
+                          }
+                        },
+                        "id": 12,
+                        "indexExpression": {
+                          "argumentTypes": null,
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 10,
+                            "name": "msg",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 480,
+                            "src": "189:3:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_magic_message",
+                              "typeString": "msg"
+                            }
+                          },
+                          "id": 11,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "sender",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": null,
+                          "src": "189:10:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address_payable",
+                            "typeString": "address payable"
+                          }
+                        },
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "IndexAccess",
+                        "src": "177:23:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "5468652073656e646572206d75737420626520612076616c6964206f7267616e697a6572",
+                        "id": 13,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "202:38:0",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_62e8c3c647a62a91edab3c9fcedd11aaffa9117ccdd30f304c41a1e7fd0d3203",
+                          "typeString": "literal_string \"The sender must be a valid organizer\""
+                        },
+                        "value": "The sender must be a valid organizer"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_62e8c3c647a62a91edab3c9fcedd11aaffa9117ccdd30f304c41a1e7fd0d3203",
+                          "typeString": "literal_string \"The sender must be a valid organizer\""
+                        }
+                      ],
+                      "id": 8,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        483,
+                        484
+                      ],
+                      "referencedDeclaration": 484,
+                      "src": "169:7:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (bool,string memory) pure"
+                      }
+                    },
+                    "id": 14,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "169:72:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 15,
+                  "nodeType": "ExpressionStatement",
+                  "src": "169:72:0"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "commonType": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        "id": 23,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "argumentTypes": null,
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 17,
+                            "name": "msg",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 480,
+                            "src": "259:3:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_magic_message",
+                              "typeString": "msg"
+                            }
+                          },
+                          "id": 18,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "sender",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": null,
+                          "src": "259:10:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address_payable",
+                            "typeString": "address payable"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "==",
+                        "rightExpression": {
+                          "argumentTypes": null,
+                          "expression": {
+                            "argumentTypes": null,
+                            "baseExpression": {
+                              "argumentTypes": null,
+                              "id": 19,
+                              "name": "eventToBallot",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 287,
+                              "src": "273:13:0",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_mapping$_t_string_memory_$_t_struct$_Ballot_$279_storage_$",
+                                "typeString": "mapping(string memory => struct BallotManager.Ballot storage ref)"
+                              }
+                            },
+                            "id": 21,
+                            "indexExpression": {
+                              "argumentTypes": null,
+                              "id": 20,
+                              "name": "_eventId",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 6,
+                              "src": "287:8:0",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_string_memory_ptr",
+                                "typeString": "string memory"
+                              }
+                            },
+                            "isConstant": false,
+                            "isLValue": true,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "nodeType": "IndexAccess",
+                            "src": "273:23:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_struct$_Ballot_$279_storage",
+                              "typeString": "struct BallotManager.Ballot storage ref"
+                            }
+                          },
+                          "id": 22,
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "organizer",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 257,
+                          "src": "273:33:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        "src": "259:47:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "5468652073656e646572206d757374206f776e207468652042616c6c6f74",
+                        "id": 24,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "308:32:0",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_6b40dba1ed7d2734cd82cd5b16c36aafffad55c6a385ed7acfb388d2683de722",
+                          "typeString": "literal_string \"The sender must own the Ballot\""
+                        },
+                        "value": "The sender must own the Ballot"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_6b40dba1ed7d2734cd82cd5b16c36aafffad55c6a385ed7acfb388d2683de722",
+                          "typeString": "literal_string \"The sender must own the Ballot\""
+                        }
+                      ],
+                      "id": 16,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        483,
+                        484
+                      ],
+                      "referencedDeclaration": 484,
+                      "src": "251:7:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (bool,string memory) pure"
+                      }
+                    },
+                    "id": 25,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "251:90:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 26,
+                  "nodeType": "ExpressionStatement",
+                  "src": "251:90:0"
+                },
+                {
+                  "id": 27,
+                  "nodeType": "PlaceholderStatement",
+                  "src": "351:1:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 29,
+            "name": "onlyOrganizerOf",
+            "nodeType": "ModifierDefinition",
+            "parameters": {
+              "id": 7,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 6,
+                  "name": "_eventId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 29,
+                  "src": "135:22:0",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 5,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "135:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "134:24:0"
+            },
+            "src": "110:249:0",
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 45,
+              "nodeType": "Block",
+              "src": "454:69:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "baseExpression": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "baseExpression": {
+                          "argumentTypes": null,
+                          "id": 38,
+                          "name": "eventToBallot",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 287,
+                          "src": "471:13:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_mapping$_t_string_memory_$_t_struct$_Ballot_$279_storage_$",
+                            "typeString": "mapping(string memory => struct BallotManager.Ballot storage ref)"
+                          }
+                        },
+                        "id": 40,
+                        "indexExpression": {
+                          "argumentTypes": null,
+                          "id": 39,
+                          "name": "_eventId",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 33,
+                          "src": "485:8:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        },
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "IndexAccess",
+                        "src": "471:23:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Ballot_$279_storage",
+                          "typeString": "struct BallotManager.Ballot storage ref"
+                        }
+                      },
+                      "id": 41,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "isAttendee",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 261,
+                      "src": "471:34:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_mapping$_t_address_$_t_bool_$",
+                        "typeString": "mapping(address => bool)"
+                      }
+                    },
+                    "id": 43,
+                    "indexExpression": {
+                      "argumentTypes": null,
+                      "id": 42,
+                      "name": "_attendee",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 31,
+                      "src": "506:9:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "IndexAccess",
+                    "src": "471:45:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "functionReturnParameters": 37,
+                  "id": 44,
+                  "nodeType": "Return",
+                  "src": "464:52:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 46,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "isAttendee",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 34,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 31,
+                  "name": "_attendee",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 46,
+                  "src": "385:17:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 30,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "385:7:0",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 33,
+                  "name": "_eventId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 46,
+                  "src": "404:22:0",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 32,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "404:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "384:43:0"
+            },
+            "returnParameters": {
+              "id": 37,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 36,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 46,
+                  "src": "449:4:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 35,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "449:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "448:6:0"
+            },
+            "scope": 67,
+            "src": "365:158:0",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 65,
+              "nodeType": "Block",
+              "src": "626:69:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 63,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "baseExpression": {
+                            "argumentTypes": null,
+                            "id": 56,
+                            "name": "eventToBallot",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 287,
+                            "src": "636:13:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_mapping$_t_string_memory_$_t_struct$_Ballot_$279_storage_$",
+                              "typeString": "mapping(string memory => struct BallotManager.Ballot storage ref)"
+                            }
+                          },
+                          "id": 58,
+                          "indexExpression": {
+                            "argumentTypes": null,
+                            "id": 57,
+                            "name": "_eventId",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 50,
+                            "src": "650:8:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_string_memory_ptr",
+                              "typeString": "string memory"
+                            }
+                          },
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "nodeType": "IndexAccess",
+                          "src": "636:23:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_Ballot_$279_storage",
+                            "typeString": "struct BallotManager.Ballot storage ref"
+                          }
+                        },
+                        "id": 59,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "isAttendee",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 261,
+                        "src": "636:34:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_address_$_t_bool_$",
+                          "typeString": "mapping(address => bool)"
+                        }
+                      },
+                      "id": 61,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "id": 60,
+                        "name": "_attendee",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 48,
+                        "src": "671:9:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "636:45:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "74727565",
+                      "id": 62,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "bool",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "684:4:0",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      },
+                      "value": "true"
+                    },
+                    "src": "636:52:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 64,
+                  "nodeType": "ExpressionStatement",
+                  "src": "636:52:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 66,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [
+              {
+                "arguments": [
+                  {
+                    "argumentTypes": null,
+                    "id": 53,
+                    "name": "_eventId",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 50,
+                    "src": "616:8:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_memory_ptr",
+                      "typeString": "string memory"
+                    }
+                  }
+                ],
+                "id": 54,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 52,
+                  "name": "onlyOrganizerOf",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 29,
+                  "src": "600:15:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_modifier$_t_string_memory_ptr_$",
+                    "typeString": "modifier (string memory)"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "600:25:0"
+              }
+            ],
+            "name": "addAttendee",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 51,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 48,
+                  "name": "_attendee",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 66,
+                  "src": "550:17:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 47,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "550:7:0",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 50,
+                  "name": "_eventId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 66,
+                  "src": "569:22:0",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 49,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "569:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "549:43:0"
+            },
+            "returnParameters": {
+              "id": 55,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "626:0:0"
+            },
+            "scope": 67,
+            "src": "529:166:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 68,
+        "src": "64:633:0"
+      }
+    ],
+    "src": "0:697:0"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/fujian/CMU/Studio/pinocchioDapp/contracts/BallotSignIn.sol",
+    "exportedSymbols": {
+      "BallotSignIn": [
+        67
+      ]
+    },
+    "id": 68,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".8"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:0"
+      },
+      {
+        "absolutePath": "/Users/fujian/CMU/Studio/pinocchioDapp/contracts/ballots/BallotManager.sol",
+        "file": "./ballots/BallotManager.sol",
+        "id": 2,
+        "nodeType": "ImportDirective",
+        "scope": 68,
+        "sourceUnit": 355,
+        "src": "25:37:0",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 3,
+              "name": "BallotManager",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 354,
+              "src": "89:13:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_BallotManager_$354",
+                "typeString": "contract BallotManager"
+              }
+            },
+            "id": 4,
+            "nodeType": "InheritanceSpecifier",
+            "src": "89:13:0"
+          }
+        ],
+        "contractDependencies": [
+          354,
+          465
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 67,
+        "linearizedBaseContracts": [
+          67,
+          354,
+          465
+        ],
+        "name": "BallotSignIn",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 28,
+              "nodeType": "Block",
+              "src": "159:200:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "baseExpression": {
+                          "argumentTypes": null,
+                          "id": 9,
+                          "name": "isOrganizer",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 283,
+                          "src": "177:11:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_mapping$_t_address_$_t_bool_$",
+                            "typeString": "mapping(address => bool)"
+                          }
+                        },
+                        "id": 12,
+                        "indexExpression": {
+                          "argumentTypes": null,
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 10,
+                            "name": "msg",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 480,
+                            "src": "189:3:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_magic_message",
+                              "typeString": "msg"
+                            }
+                          },
+                          "id": 11,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "sender",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": null,
+                          "src": "189:10:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address_payable",
+                            "typeString": "address payable"
+                          }
+                        },
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "IndexAccess",
+                        "src": "177:23:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "5468652073656e646572206d75737420626520612076616c6964206f7267616e697a6572",
+                        "id": 13,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "202:38:0",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_62e8c3c647a62a91edab3c9fcedd11aaffa9117ccdd30f304c41a1e7fd0d3203",
+                          "typeString": "literal_string \"The sender must be a valid organizer\""
+                        },
+                        "value": "The sender must be a valid organizer"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_62e8c3c647a62a91edab3c9fcedd11aaffa9117ccdd30f304c41a1e7fd0d3203",
+                          "typeString": "literal_string \"The sender must be a valid organizer\""
+                        }
+                      ],
+                      "id": 8,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        483,
+                        484
+                      ],
+                      "referencedDeclaration": 484,
+                      "src": "169:7:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (bool,string memory) pure"
+                      }
+                    },
+                    "id": 14,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "169:72:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 15,
+                  "nodeType": "ExpressionStatement",
+                  "src": "169:72:0"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "commonType": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        "id": 23,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "argumentTypes": null,
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 17,
+                            "name": "msg",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 480,
+                            "src": "259:3:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_magic_message",
+                              "typeString": "msg"
+                            }
+                          },
+                          "id": 18,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "sender",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": null,
+                          "src": "259:10:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address_payable",
+                            "typeString": "address payable"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "==",
+                        "rightExpression": {
+                          "argumentTypes": null,
+                          "expression": {
+                            "argumentTypes": null,
+                            "baseExpression": {
+                              "argumentTypes": null,
+                              "id": 19,
+                              "name": "eventToBallot",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 287,
+                              "src": "273:13:0",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_mapping$_t_string_memory_$_t_struct$_Ballot_$279_storage_$",
+                                "typeString": "mapping(string memory => struct BallotManager.Ballot storage ref)"
+                              }
+                            },
+                            "id": 21,
+                            "indexExpression": {
+                              "argumentTypes": null,
+                              "id": 20,
+                              "name": "_eventId",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 6,
+                              "src": "287:8:0",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_string_memory_ptr",
+                                "typeString": "string memory"
+                              }
+                            },
+                            "isConstant": false,
+                            "isLValue": true,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "nodeType": "IndexAccess",
+                            "src": "273:23:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_struct$_Ballot_$279_storage",
+                              "typeString": "struct BallotManager.Ballot storage ref"
+                            }
+                          },
+                          "id": 22,
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "organizer",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 257,
+                          "src": "273:33:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        "src": "259:47:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "5468652073656e646572206d757374206f776e207468652042616c6c6f74",
+                        "id": 24,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "308:32:0",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_6b40dba1ed7d2734cd82cd5b16c36aafffad55c6a385ed7acfb388d2683de722",
+                          "typeString": "literal_string \"The sender must own the Ballot\""
+                        },
+                        "value": "The sender must own the Ballot"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_6b40dba1ed7d2734cd82cd5b16c36aafffad55c6a385ed7acfb388d2683de722",
+                          "typeString": "literal_string \"The sender must own the Ballot\""
+                        }
+                      ],
+                      "id": 16,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        483,
+                        484
+                      ],
+                      "referencedDeclaration": 484,
+                      "src": "251:7:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (bool,string memory) pure"
+                      }
+                    },
+                    "id": 25,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "251:90:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 26,
+                  "nodeType": "ExpressionStatement",
+                  "src": "251:90:0"
+                },
+                {
+                  "id": 27,
+                  "nodeType": "PlaceholderStatement",
+                  "src": "351:1:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 29,
+            "name": "onlyOrganizerOf",
+            "nodeType": "ModifierDefinition",
+            "parameters": {
+              "id": 7,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 6,
+                  "name": "_eventId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 29,
+                  "src": "135:22:0",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 5,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "135:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "134:24:0"
+            },
+            "src": "110:249:0",
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 45,
+              "nodeType": "Block",
+              "src": "454:69:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "baseExpression": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "baseExpression": {
+                          "argumentTypes": null,
+                          "id": 38,
+                          "name": "eventToBallot",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 287,
+                          "src": "471:13:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_mapping$_t_string_memory_$_t_struct$_Ballot_$279_storage_$",
+                            "typeString": "mapping(string memory => struct BallotManager.Ballot storage ref)"
+                          }
+                        },
+                        "id": 40,
+                        "indexExpression": {
+                          "argumentTypes": null,
+                          "id": 39,
+                          "name": "_eventId",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 33,
+                          "src": "485:8:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        },
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "IndexAccess",
+                        "src": "471:23:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Ballot_$279_storage",
+                          "typeString": "struct BallotManager.Ballot storage ref"
+                        }
+                      },
+                      "id": 41,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "isAttendee",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 261,
+                      "src": "471:34:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_mapping$_t_address_$_t_bool_$",
+                        "typeString": "mapping(address => bool)"
+                      }
+                    },
+                    "id": 43,
+                    "indexExpression": {
+                      "argumentTypes": null,
+                      "id": 42,
+                      "name": "_attendee",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 31,
+                      "src": "506:9:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "IndexAccess",
+                    "src": "471:45:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "functionReturnParameters": 37,
+                  "id": 44,
+                  "nodeType": "Return",
+                  "src": "464:52:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 46,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "isAttendee",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 34,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 31,
+                  "name": "_attendee",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 46,
+                  "src": "385:17:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 30,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "385:7:0",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 33,
+                  "name": "_eventId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 46,
+                  "src": "404:22:0",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 32,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "404:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "384:43:0"
+            },
+            "returnParameters": {
+              "id": 37,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 36,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 46,
+                  "src": "449:4:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 35,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "449:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "448:6:0"
+            },
+            "scope": 67,
+            "src": "365:158:0",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 65,
+              "nodeType": "Block",
+              "src": "626:69:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 63,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "baseExpression": {
+                            "argumentTypes": null,
+                            "id": 56,
+                            "name": "eventToBallot",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 287,
+                            "src": "636:13:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_mapping$_t_string_memory_$_t_struct$_Ballot_$279_storage_$",
+                              "typeString": "mapping(string memory => struct BallotManager.Ballot storage ref)"
+                            }
+                          },
+                          "id": 58,
+                          "indexExpression": {
+                            "argumentTypes": null,
+                            "id": 57,
+                            "name": "_eventId",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 50,
+                            "src": "650:8:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_string_memory_ptr",
+                              "typeString": "string memory"
+                            }
+                          },
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "nodeType": "IndexAccess",
+                          "src": "636:23:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_Ballot_$279_storage",
+                            "typeString": "struct BallotManager.Ballot storage ref"
+                          }
+                        },
+                        "id": 59,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "isAttendee",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 261,
+                        "src": "636:34:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_address_$_t_bool_$",
+                          "typeString": "mapping(address => bool)"
+                        }
+                      },
+                      "id": 61,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "id": 60,
+                        "name": "_attendee",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 48,
+                        "src": "671:9:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "636:45:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "74727565",
+                      "id": 62,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "bool",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "684:4:0",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      },
+                      "value": "true"
+                    },
+                    "src": "636:52:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 64,
+                  "nodeType": "ExpressionStatement",
+                  "src": "636:52:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 66,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [
+              {
+                "arguments": [
+                  {
+                    "argumentTypes": null,
+                    "id": 53,
+                    "name": "_eventId",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 50,
+                    "src": "616:8:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_memory_ptr",
+                      "typeString": "string memory"
+                    }
+                  }
+                ],
+                "id": 54,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 52,
+                  "name": "onlyOrganizerOf",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 29,
+                  "src": "600:15:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_modifier$_t_string_memory_ptr_$",
+                    "typeString": "modifier (string memory)"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "600:25:0"
+              }
+            ],
+            "name": "addAttendee",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 51,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 48,
+                  "name": "_attendee",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 66,
+                  "src": "550:17:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 47,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "550:7:0",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 50,
+                  "name": "_eventId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 66,
+                  "src": "569:22:0",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 49,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "569:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "549:43:0"
+            },
+            "returnParameters": {
+              "id": 55,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "626:0:0"
+            },
+            "scope": 67,
+            "src": "529:166:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 68,
+        "src": "64:633:0"
+      }
+    ],
+    "src": "0:697:0"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.8+commit.23d335f2.Emscripten.clang"
+  },
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0xEBf9fAeEceF5D2aD42B4aF774ea7a0bCBe817AAd",
+      "transactionHash": "0x28afab17919903c621eef90fe806302c3e62cb5414ae71485243031763abd29c"
+    }
+  },
+  "schemaVersion": "3.0.11",
+  "updatedAt": "2019-07-30T18:58:41.088Z",
+  "devdoc": {
+    "methods": {
+      "isOwner()": {
+        "details": "Returns true if the caller is the current owner."
+      },
+      "owner()": {
+        "details": "Returns the address of the current owner."
+      },
+      "renounceOwnership()": {
+        "details": "Leaves the contract without owner. It will not be possible to call `onlyOwner` functions anymore. Can only be called by the current owner.     * > Note: Renouncing ownership will leave the contract without an owner, thereby removing any functionality that is only available to the owner."
+      },
+      "transferOwnership(address)": {
+        "details": "Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner."
+      }
+    }
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
